@@ -212,25 +212,6 @@ where P(diabetes) is the probability of the individual having diabetes given the
       )
     )
     ),
-  tabPanel("Observation",
-           
-           tags$h3("Observation"),
-           br(),
-           tags$p("Random Forest was chosen because of its ability to classify and using the best possible selection of the parameters",
-           "My first choice to fix this issue was to smote classify and create duplicates for the the lower number of Diabetes and No diabetes. However, on Doing so, the size of the data increased ginormously.",
-           #tags$h3("Hyperparameters:"),
-           br(),
-           br(),"Another Idea was to undersample the data. As there were only 3500 entries of Borderline Diabetes.For this I created a subset of 3000 entries of Diabetes, 3000 entries of No Diabetes and 3000 entries of borderline Diabetes. But on doing so the accuracy decreased drastically because of overfitting due to extremely small dataset." ,
-           br(),
-           #tags$h3("Advantages:"),
-           br(),"The intention of this application is not to diagnose the patient without the need of doctor but to help create awareness such that they go to the doctor if they feel they have any of the symptoms.",style="text-align:justify;color:black;background-color:papayawhip;padding:15px;border-radius:10px"),
-           tags$h3("Next Steps:"),
-           tags$ul(
-             tags$li("Deploy this application for public use:"),
-             tags$li("Improve the dataset to decrease the overfitting and being able accurately predict using more computational power."),
-             tags$li("Continue improving through exploring more algorithms with better processing power."),
-             style="text-align:justify;color:black;background-color:#B3E6B3;padding:15px;border-radius:10px" )
-  ),
   tabPanel("Description",
           
                       p(strong("What data you collected?"),
@@ -260,30 +241,30 @@ where P(diabetes) is the probability of the individual having diabetes given the
                         br(),
                         "    2.1. What is their Age.",
                         br(),
-                        "    2.2. What Sex are they",
+                        "    2.2. What Sex are they?",
                         br(),
-                        "    2.3. Do they have High Blood Pressure.",
+                        "    2.3. Do they have High Blood Pressure?",
                         br(),
-                        "    2.4. Do they have high Cholestrol Levels",
+                        "    2.4. Do they have high Cholestrol Levels?",
                         br(),
-                        "    2.5. Have they had their cholestrol checked recently.",
+                        "    2.5. Have they had their cholestrol checked recently?",
                         br(),
-                        "    2.6. What is their BMI",
+                        "    2.6. What is their BMI?",
                         br(),
-                        "    2.7. Do they smoke frequently ",
+                        "    2.7. Do they smoke frequently? ",
                         br(),
                         "    2.8. Have they ever had a stroke?",
           
                         br(),
-                        "2.9 Have they had a heart disease or heart attack ",
+                        "2.9 Have they had a heart disease or heart attack? ",
                         br(),
-                        "  2.10 Do they have access to healthcare",
+                        "  2.10 Do they have access to healthcare?",
                         br(),
-                        "  2.11 How is their General Health",
+                        "  2.11 How is their General Health?",
                         br(),
-                        "   2.12 How is they Mental Health",
+                        "   2.12 How is they Mental Health?",
                         br(),
-                        "   2.13 How is their Physical Health",
+                        "   2.13 How is their Physical Health?",
                         br(),
                         "   2.14 Do they have difficult walking",
                         br(),
@@ -307,7 +288,7 @@ where P(diabetes) is the probability of the individual having diabetes given the
                       
                       p(strong("Why this topic is interesting or important to you?"),
                         br(),
-                        "I always have had great interest in healthcare and want to work in a field closely related to it ",
+                        "I always have had great interest in healthcare and want to work in a field closely related to it. ",
                         br(),
                         "I have known a lot of people who have had undiagnosed diabetes from a young age and would like to create an opportunity for someone to work towards early diagnosis of it.",
     
@@ -316,7 +297,7 @@ where P(diabetes) is the probability of the individual having diabetes given the
                         "One of the reasons for choosing this dataset is that it is an unbalanced dataset and I wanted to experiment with how good random forest algorithm is when considering multilevel classifcation of an imbalanced dataset.",
                         
                         br(),
-                        "Machine Learning can be an extremely useful tool in diagnosing illnesses. Aside from this illness, there are many other diseases such as Alzheimer's, heart failures, different types of cancer and pneumonia which are already being diagnosed using Machine Learning ",
+                        "Machine Learning can be an extremely useful tool in diagnosing illnesses. Aside from this illness, there are many other diseases such as Alzheimer's, heart failures, different types of cancer and pneumonia which are already being diagnosed using Machine Learning. ",
                         
                         br(),
                         br(),
@@ -334,7 +315,7 @@ where P(diabetes) is the probability of the individual having diabetes given the
                         br(),
                         "I finalized the best features after considering the graphs as well as considering from a users point of view. Features such as BMI, Income, Education even though usefull were not as important as other features and hence were eliminated.",
                         br(),
-                        style="text-align:justify;color:black;background-color:lavender;padding:15px;border-radius:10px"),
+                        style="text-align:justify;color:black;background-color:#E6B3B3;padding:15px;border-radius:10px"),
                       br(),
                       
                       
@@ -344,7 +325,7 @@ where P(diabetes) is the probability of the individual having diabetes given the
                         "Following are the multiple observations regarding this dataset:",
                         br(),
                         br(),
-                        "1. Most of the Diabetic Patiens Have never had a heart disease or a stroke.",
+                        "1. Most of the Diabetic Patients Have never had a heart disease or a stroke.",
                         br(),
           
                         "2. There are more number of non Diabetics having higher BP and high Cholestrol than diabetics",
@@ -360,7 +341,7 @@ where P(diabetes) is the probability of the individual having diabetes given the
                         br(),
                         "7. There are large number of teenagers and young adult who have diabetes which gradually decreases and than increases as they get older.",
                         
-                        style="text-align:justify;color:black;background-color:papayawhip;padding:15px;border-radius:10px"),
+                        style="text-align:justify;color:black;background-color:#B3E6B3;padding:15px;border-radius:10px"),
                       
                       width=8),
                     br()
