@@ -212,6 +212,25 @@ where P(diabetes) is the probability of the individual having diabetes given the
       )
     )
     ),
+   tabPanel("Observation",
+           
+           tags$h3("Observation"),
+           br(),
+           tags$p("Random Forest was chosen because of its ability to classify and using the best possible selection of the parameters",
+           "My first choice to fix this issue was to smote classify and create duplicates for the the lower number of Diabetes and No diabetes. However, on Doing so, the size of the data increased ginormously.",
+           #tags$h3("Hyperparameters:"),
+           br(),
+           br(),"Another Idea was to undersample the data. As there were only 3500 entries of Borderline Diabetes.For this I created a subset of 3000 entries of Diabetes, 3000 entries of No Diabetes and 3000 entries of borderline Diabetes. But on doing so the accuracy decreased drastically because of overfitting due to extremely small dataset." ,
+           br(),
+           #tags$h3("Advantages:"),
+           br(),"The intention of this application is not to diagnose the patient without the need of doctor but to help create awareness such that they go to the doctor if they feel they have any of the symptoms.",style="text-align:justify;color:black;background-color:papayawhip;padding:15px;border-radius:10px"),
+           tags$h3("Next Steps:"),
+           tags$ul(
+             tags$li("Deploy this application for public use:"),
+             tags$li("Improve the dataset to decrease the overfitting and being able accurately predict using more computational power."),
+             tags$li("Continue improving through exploring more algorithms with better processing power."),
+             style="text-align:justify;color:black;background-color:#B3E6B3;padding:15px;border-radius:10px" )
+  ),
   tabPanel("Description",
           
                       p(strong("What data you collected?"),
@@ -346,6 +365,7 @@ where P(diabetes) is the probability of the individual having diabetes given the
                       width=8),
                     br()
            )
+           
            
            
          
